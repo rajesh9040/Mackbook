@@ -14,6 +14,7 @@ public class HomePage {
 	By submit= By.xpath("//input[@id='nav-search-submit-button']");
 	By add = By.xpath("//a//child::span[contains(text(),'iPhone 18 Pro (256 GB) - Black')]//ancestor::div[@role='listitem']//descendant::input[@aria-label='Add to cart']");
 	By cart1=By.xpath("//a[@aria-label='1 item in cart']");
+	By proceed = By.xpath("//input[@name='proceedToRetailCheckout']");
 	public HomePage(WebDriver driver) {
         this.driver = driver;
     }
@@ -35,6 +36,7 @@ public class HomePage {
 	public void item() {
 		System.out.print("Item added in the cart");
 		driver.findElement(cart1).click();
+		driver.findElement(proceed).click();
 	}
 
 }
