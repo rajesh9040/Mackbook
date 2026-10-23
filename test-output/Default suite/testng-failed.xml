@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="SeleniumProject.SeleniumProject.HomeTest">
+      <class name="Total_test.HomeTest">
         <methods>
+          <include name="setup"/>
+          <include name="Home"/>
           <include name="tearDown"/>
-          <include name="searchIphone"/>
-          <include name="setUp"/>
         </methods>
-      </class> <!-- SeleniumProject.SeleniumProject.HomeTest -->
+      </class> <!-- Total_test.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
