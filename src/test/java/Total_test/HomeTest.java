@@ -41,4 +41,8 @@ public class HomeTest extends BaseTest {
     	buy.pr();
     	
     }
+    @Test(dependsOnMethods="Home")
+    public void backward() {
+    	driver.navigate().back();
+    }
 }
