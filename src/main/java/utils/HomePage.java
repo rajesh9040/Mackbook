@@ -36,6 +36,9 @@ public class HomePage {
 	public void item() {
 		System.out.print("Item added in the cart");
 		driver.findElement(cart1).click();
+		
+	}
+	public void pr() {
 		driver.findElement(proceed).click();
 	}
 

@@ -8,7 +8,7 @@ import org.testng.annotations.Listeners;
 import utils.drivers;
 
 
-public class BaseTest extends drivers {
+public  class BaseTest extends drivers {
 	
     @BeforeTest
     public void setup() {

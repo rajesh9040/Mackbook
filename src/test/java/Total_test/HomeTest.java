@@ -16,11 +16,12 @@ import utils.Waiting;
     TestListeners.class
 })
 public class HomeTest extends BaseTest {
+	WebDriver driver;
 
     @Test
     public void Home() {
 
-        WebDriver driver = drivers.getDriver();
+        driver = drivers.getDriver();
 
         HomePage home = new HomePage(driver);
         Waiting w = new Waiting(driver);
@@ -32,5 +33,12 @@ public class HomeTest extends BaseTest {
         w.time();
 
         home.item();
+       
+    }
+    @Test(enabled=false)
+    public void checkout() {
+    	HomePage buy= new HomePage(driver);
+    	buy.pr();
+    	
     }
 }
