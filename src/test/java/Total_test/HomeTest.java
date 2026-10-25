@@ -17,12 +17,14 @@ import utils.Waiting;
 })
 public class HomeTest extends BaseTest {
 	WebDriver driver;
+	String parentWindow;
 	
 
     @Test
     public void Home() {
 
     	  driver = drivers.getDriver();
+    	  parentWindow = driver.getWindowHandle();
 
         HomePage home = new HomePage(driver);
         Waiting w = new Waiting(driver);
@@ -46,6 +48,10 @@ public class HomeTest extends BaseTest {
     public void ward() {
     	System.out.print("backward");
     	  driver = drivers.getDriver();
-    	driver.navigate().back();
+    	  System.out.println("Switching back to parent homepage");
+
+    	    driver.switchTo().window(parentWindow);
+
+    	    System.out.println("Parent page title: " + driver.getTitle());
     }
 }
