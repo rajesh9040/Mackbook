@@ -43,6 +43,7 @@ public class HomeTest extends BaseTest {
     }
     @Test(dependsOnMethods="Home")
     public void backward() {
+    	System.out.print("backward");
     	driver.navigate().back();
     }
 }
