@@ -5,8 +5,9 @@
     <classes>
       <class name="Total_test.HomeTest">
         <methods>
+          <include name="ward"/>
           <include name="setup"/>
-          <include name="Home"/>
+          <include name="dd"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- Total_test.HomeTest -->

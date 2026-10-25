@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-10-25T11:45:01 IST" name="Surefire suite" finished-at="2026-10-25T11:45:08 IST" duration-ms="6237">
+  <suite started-at="2026-10-25T13:11:16 IST" name="Surefire suite" finished-at="2026-10-25T13:11:22 IST" duration-ms="6401">
     <groups>
     </groups>
-    <test started-at="2026-10-25T11:45:01 IST" name="Surefire test" finished-at="2026-10-25T11:45:08 IST" duration-ms="6237">
+    <test started-at="2026-10-25T13:11:16 IST" name="Surefire test" finished-at="2026-10-25T13:11:22 IST" duration-ms="6401">
       <class name="Total_test.HomeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Total_test.HomeTest@5f9b2141]" started-at="2026-10-25T11:45:01 IST" name="setup" finished-at="2026-10-25T11:45:02 IST" duration-ms="1175" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Total_test.HomeTest@50ad3bc1]" started-at="2026-10-25T13:11:16 IST" name="setup" finished-at="2026-10-25T13:11:17 IST" duration-ms="1172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Home()[pri:0, instance:Total_test.HomeTest@5f9b2141]" started-at="2026-10-25T11:45:02 IST" name="Home" finished-at="2026-10-25T11:45:07 IST" duration-ms="4193" status="PASS">
+        <test-method signature="Home()[pri:0, instance:Total_test.HomeTest@50ad3bc1]" started-at="2026-10-25T13:11:17 IST" name="Home" finished-at="2026-10-25T13:11:21 IST" duration-ms="4073" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Home -->
-        <test-method signature="ward()[pri:0, instance:Total_test.HomeTest@5f9b2141]" started-at="2026-10-25T11:45:07 IST" name="ward" finished-at="2026-10-25T11:45:07 IST" duration-ms="731" status="PASS">
+        <test-method signature="ward()[pri:0, instance:Total_test.HomeTest@50ad3bc1]" started-at="2026-10-25T13:11:21 IST" name="ward" finished-at="2026-10-25T13:11:22 IST" duration-ms="853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ward -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Total_test.HomeTest@5f9b2141]" started-at="2026-10-25T11:45:07 IST" name="tearDown" finished-at="2026-10-25T11:45:08 IST" duration-ms="101" status="PASS">
+        <test-method signature="dd()[pri:0, instance:Total_test.HomeTest@50ad3bc1]" started-at="2026-10-25T13:11:22 IST" name="dd" finished-at="2026-10-25T13:11:22 IST" depends-on-methods="Total_test.HomeTest.ward" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Total_test.HomeTest@50ad3bc1]" started-at="2026-10-25T13:11:22 IST" name="tearDown" finished-at="2026-10-25T13:11:22 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

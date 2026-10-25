@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import io.qameta.allure.testng.AllureTestNg;
 
 import utils.drivers;
+import utils.DropDown;
 import utils.HomePage;
 import utils.Waiting;
 
@@ -49,5 +50,11 @@ public class HomeTest extends BaseTest {
     	System.out.print("backward");
     	  driver = drivers.getDriver();
 driver.get("https://www.amazon.in/");
+    }
+    @Test(dependsOnMethods="ward")
+    public void dd() {
+    	driver = drivers.getDriver();
+    	DropDown d = new DropDown(driver);
+    	d.dropDown();
     }
 }
