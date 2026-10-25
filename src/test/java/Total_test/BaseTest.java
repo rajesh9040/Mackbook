@@ -2,6 +2,7 @@
 package Total_test;
 
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Listeners;
 
@@ -17,7 +18,7 @@ public  class BaseTest extends drivers {
 
         drivers.initDriver();
     }
-    @AfterMethod
+    @AfterTest
     public void tearDown() {
         drivers.quitDriver();
         System.out.println("Browser closed");

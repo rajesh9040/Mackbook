@@ -17,11 +17,12 @@ import utils.Waiting;
 })
 public class HomeTest extends BaseTest {
 	WebDriver driver;
+	
 
     @Test
     public void Home() {
 
-        driver = drivers.getDriver();
+    	  driver = drivers.getDriver();
 
         HomePage home = new HomePage(driver);
         Waiting w = new Waiting(driver);
@@ -44,6 +45,7 @@ public class HomeTest extends BaseTest {
     @Test
     public void ward() {
     	System.out.print("backward");
+    	  driver = drivers.getDriver();
     	driver.navigate().back();
     }
 }
