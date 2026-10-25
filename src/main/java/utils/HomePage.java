@@ -5,6 +5,7 @@ import java.time.Duration;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage {
@@ -24,17 +25,22 @@ public class HomePage {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 		driver.findElement(searchBox).sendKeys(item);
+		driver.switchTo().newWindow(WindowType.TAB);
 		driver.findElement(submit).click();
+		
 		JavascriptExecutor  js = (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(0,500)");
 		
 	}
 	public void cart() {
+		driver.switchTo().newWindow(WindowType.TAB);
 		driver.findElement(add).click();
+		
 	}
 	
 	public void item() {
 		System.out.print("Item added in the cart");
+		driver.switchTo().newWindow(WindowType.TAB);
 		driver.findElement(cart1).click();
 		
 	}
