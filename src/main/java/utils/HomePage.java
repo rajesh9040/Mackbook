@@ -25,7 +25,7 @@ public class HomePage {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 		driver.findElement(searchBox).sendKeys(item);
-		driver.switchTo().newWindow(WindowType.TAB);
+	
 		driver.findElement(submit).click();
 		
 		JavascriptExecutor  js = (JavascriptExecutor)driver;
@@ -33,14 +33,14 @@ public class HomePage {
 		
 	}
 	public void cart() {
-		driver.switchTo().newWindow(WindowType.TAB);
+	
 		driver.findElement(add).click();
 		
 	}
 	
 	public void item() {
 		System.out.print("Item added in the cart");
-		driver.switchTo().newWindow(WindowType.TAB);
+		
 		driver.findElement(cart1).click();
 		
 	}
